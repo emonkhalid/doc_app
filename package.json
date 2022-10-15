@@ -4,12 +4,13 @@
   "description": "Doctor Appointment App",
   "main": "index.html",
   "scripts": {
-    "start":"lite-server",
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "lite-server": "^2.6.1"
   }
 }
