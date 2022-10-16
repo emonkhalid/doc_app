@@ -6,7 +6,7 @@
   "scripts": {
     "start": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "font-awesome": "^4.7.0",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.3"
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0"
   }
 }
