@@ -4,11 +4,13 @@
   "description": "Doctor Appointment App",
   "main": "index.html",
   "scripts": {
-    "start": "lite-server",
+    "start": "npm run watch:all",
     "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss"
+    "lite": "lite-server",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
-  "author": "",
+  "author": "Khalid",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.2",
@@ -18,6 +20,7 @@
     "node-sass": "^7.0.3"
   },
   "devDependencies": {
-    "onchange": "^7.1.0"
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1"
   }
 }
