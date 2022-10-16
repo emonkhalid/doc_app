@@ -10,7 +10,10 @@
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin account_doctor.html -d dist --htmlmin -o dist/account_doctor.html && usemin account_patient.html -d dist --htmlmin -o dist/account_patient.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "author": "Khalid",
   "license": "ISC",
@@ -19,12 +22,17 @@
     "bootstrap-social": "^5.1.1",
     "copyfiles": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "imagemin-cli": "^7.0.0",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.3"
   },
   "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
     "onchange": "^7.1.0",
     "parallelshell": "^3.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   }
 }

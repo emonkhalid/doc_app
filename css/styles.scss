@@ -1,10 +1,13 @@
 $paste_color_dark: #246369;
 $paste_color_light: #45a384;
-$green_color_light: #9affb5;
+$green_color_light: #e7fded;
 
 a{color: $green_color_light;}
 a:hover{color: $paste_color_dark;}
 
+.heading-section{
+    background-color: $green_color_light;
+}
 .navbar{
     background-color: $paste_color_dark !important;
 }
