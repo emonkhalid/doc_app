@@ -1,7 +1,28 @@
-.copyright{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
+a {
+  color: #9affb5; }
+
+a:hover {
+  color: #246369; }
+
+.navbar {
+  background-color: #246369 !important; }
+
+.bg-own {
+  background-color: #45a384; }
+
+.btn-own {
+  color: #ffffff;
+  background-color: #246369;
+  border: 2px solid #9affb5; }
+
+.btn-own:hover {
+  color: #ffffff;
+  background-color: #45a384;
+  border: 2px solid #9affb5; }
+
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px; }

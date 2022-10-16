@@ -1,0 +1,33 @@
+$paste_color_dark: #246369;
+$paste_color_light: #45a384;
+$green_color_light: #9affb5;
+
+a{color: $green_color_light;}
+a:hover{color: $paste_color_dark;}
+
+.navbar{
+    background-color: $paste_color_dark !important;
+}
+
+.bg-own{
+    background-color: $paste_color_light;
+}
+
+.btn-own{
+    color: #ffffff;
+    background-color: $paste_color_dark;
+    border: 2px solid $green_color_light;
+}
+.btn-own:hover {
+    color: #ffffff;
+    background-color: $paste_color_light;
+    border: 2px solid $green_color_light;
+}
+
+.copyright{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

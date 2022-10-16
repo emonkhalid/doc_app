@@ -9,11 +9,11 @@
     </head>
 <body>
 
-    <nav class="navbar bg-primary ">
+    <nav class="navbar ">
         <div class="container">
           <a class="navbar-brand text-white"><span class="fa fa-home fa-lg"></span> Home</a>
           <form class="d-flex" role="search">
-            <button  id="#loginModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in"></span> Login</button>
+            <button  id="#loginModal" type="button" class="btn btn-own" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in"></span> Login</button>
           </form>
         </div>
       </nav>
@@ -24,7 +24,7 @@
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleloginModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
+        <div class="modal-header bg-own text-white">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -49,59 +49,24 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-own">Login</button>
         </div>
       </div>
     </div>
   </div>
 
-     <div id="loginModal" class="modal fade" role="dialog" data-bs-toggle="modal" data-bs-target="#loginModal">
-        <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
-            <div class="modal-content ">
-                <div class="modal-header bg-primary text-white">
-                    <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                            </div>
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
     
       <div class="container-fluid">
-        <div class="row bg-dark text-white">
+        <div class="row heading-section">
           
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mt-5 mb-5 text-center  pt-5 pb-5">
                         <h1>Doctor Appoinment</h1>
                         <br>
                         <p>We make easy Doctor Appointment Services to our clients.</p>
                         <br>
-                        <a href="#appointment_form" class="btn btn-primary">Book</a>
+                        <a href="#appointment_form" class="btn btn-own">Book</a>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mt-5 mb-5 text-center pt-5 pb-5">
                     <img src="img/doctor.png" alt="doctor">
@@ -114,7 +79,7 @@
         <div class="row ">
           
                 <div class="col-12 mt-5 mb-5 text-center  pt-5 ">
-                        <h2 class="bg-primary pt-3 pb-3 text-white">Book Your Appoinment</h2>
+                        <h2 class="bg-own pt-3 pb-3 text-white">Book Your Appoinment</h2>
                         <br>
 
                         <div class="container">
@@ -198,7 +163,7 @@
                         
                 </div>
                 <div class="col-12 mb-5 pb-5 text-center">
-                    <button type="button" class="btn btn-primary" id="#booking_form">Book Now</button>
+                    <button type="button" class="btn btn-own" id="#booking_form">Book Now</button>
                 </div>
    
         </div>
