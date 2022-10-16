@@ -8,19 +8,23 @@
     "scss": "node-sass -o css/ css/",
     "lite": "lite-server",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
   "author": "Khalid",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.2",
     "bootstrap-social": "^5.1.1",
+    "copyfiles": "^2.4.1",
     "font-awesome": "^4.7.0",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.3"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2"
   }
 }
